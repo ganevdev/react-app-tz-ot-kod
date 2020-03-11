@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-import { useTimerState } from '../contexts/timer-context';
+import { useTimerIntervalState } from '../contexts/timer-interval-context';
 import Interval from './Interval';
 
 function Timer() {
-  const { timeInterval } = useTimerState();
+  const { timeInterval } = useTimerIntervalState();
   const [time, setTime] = useState(0);
   const [startOrNot, setStartOrNot] = useState(false);
 

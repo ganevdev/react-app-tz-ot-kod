@@ -1,10 +1,13 @@
 import React from 'react';
 
-import { useTimerDispatch, useTimerState } from '../contexts/timer-context';
+import {
+  useTimerIntervalDispatch,
+  useTimerIntervalState,
+} from '../contexts/timer-interval-context';
 
 function Interval() {
-  const { timeInterval } = useTimerState();
-  const dispatch = useTimerDispatch();
+  const { timeInterval } = useTimerIntervalState();
+  const dispatch = useTimerIntervalDispatch();
   return (
     <div style={{ margin: '10px' }}>
       <span>Интервал обновления секундомера: {timeInterval} сек.</span>

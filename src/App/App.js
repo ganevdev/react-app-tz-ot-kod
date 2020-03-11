@@ -3,15 +3,15 @@ import './App.css';
 import React from 'react';
 
 import Timer from '../components/Timer';
-import { TimerProvider } from '../contexts/timer-context';
+import { TimerIntervalProvider } from '../contexts/timer-interval-context';
 
 function App() {
   return (
-    <TimerProvider>
+    <TimerIntervalProvider>
       <main className="App">
         <Timer />
       </main>
-    </TimerProvider>
+    </TimerIntervalProvider>
   );
 }
 
